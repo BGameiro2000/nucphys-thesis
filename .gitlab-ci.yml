@@ -1,5 +1,5 @@
 default:
-  image: thomasweise/docker-texlive-thin
+  image: thomasweise/docker-texlive-full
 
 compile:
   stage: build
