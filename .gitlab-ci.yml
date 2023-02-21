@@ -1,10 +1,8 @@
 default:
-  image: archlinux:latest
+  image: thomasweise/docker-texlive-thin
 
 compile:
   stage: build
-  before_script:
-    - pacman --noconfirm -Syyu texlive-most texlive-lang poppler
   script:
     - ./MAKEALL
   artifacts:
