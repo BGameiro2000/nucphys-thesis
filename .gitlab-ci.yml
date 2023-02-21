@@ -1,0 +1,23 @@
+default:
+  image: archlinux:latest
+
+compile:
+  stage: build
+  before_script:
+    - pacman --noconfirm -Syyu texlive-most texlive-lang poppler
+  script:
+    - ./MAKEALL
+  artifacts:
+    paths: 
+      - out
+
+pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - mv out/* public/
+  artifacts:
+    paths: 
+      - public
+  only: 
+    - master

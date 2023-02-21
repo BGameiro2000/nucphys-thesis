@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+mkdir out
+
+scriptname="MAKEDOC"
+makefiles=$(find . -name "$scriptname" -printf '%h\n')
+
+for f in $makefiles; do
+    echo "compiling $f"
+    pushd $f > /dev/null
+    sh $scriptname
+    popd
+done
+
+find . -name "*.pdf" | xargs -I arg mv arg out/
