@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-mkdir out
+mkdir -p out
 
 scriptname="MAKEDOC"
 makefiles=$(find . -name "$scriptname" -printf '%h\n')

@@ -4,6 +4,7 @@ default:
 compile:
   stage: build
   script:
+    - mkdir -p out
     - ./MAKEALL
   artifacts:
     paths: 
