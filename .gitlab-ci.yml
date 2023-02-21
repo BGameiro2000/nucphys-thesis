@@ -6,6 +6,7 @@ compile:
   script:
     - mkdir -p out
     - ./MAKEALL
+    - ls out
   artifacts:
     paths: 
       - out
@@ -18,5 +19,5 @@ pages:
   artifacts:
     paths: 
       - public
-  only: 
-    - master
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"

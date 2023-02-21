@@ -13,3 +13,5 @@ for f in $makefiles; do
 done
 
 find . -name "*.pdf" | xargs -I arg mv arg out/
+
+ls out
