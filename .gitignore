@@ -1,6 +1,12 @@
 # CI/CD directories
 out/
 
+# Data directories
+data/
+
+# Code provided directories
+code/HYMNS/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
