@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-yes '' | latexmk -f -pdflatex=pdflatex -pdf -jobname="LogBook_NucPhys_BGameiro_2023" main.tex
+yes '' | latexmk -f -pdflatex=xelatex -pdf -jobname="LogBook_NucPhys_BGameiro_2023" main.tex
 
 find . -regextype posix-egrep -regex ".*\.(out|aux|fdb_latexmk|fls|log|gz|bcf|xml|bbl|blg|lof|lol|lot|toc)$" -type f -delete

@@ -13,8 +13,9 @@
 \usepackage[hidelinks,colorlinks=true,linkcolor=NucPhys,urlcolor=NucPhys]{hyperref}
 
 % PDF attachments
-\usepackage{attachfile}
-\newcommand{\addfile}[1]{\textattachfile[color=0 0 0]{#1}{\faFile}}
+\usepackage{attachfile2}
+\newcommand{\file}[0]{\faFile}
+\newcommand{\addfile}[1]{\textattachfile[color=0 0 0]{#1}{File}}
 
 % Define page margins
 \geometry{
