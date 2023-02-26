@@ -1,0 +1,41 @@
+% Import necessary packages
+\usepackage[utf8]{inputenc} % Allow input in UTF-8 encoding
+\usepackage{geometry} % Set page margins
+\usepackage{fontawesome}
+\usepackage[sfdefault]{roboto} % Use Roboto font
+\usepackage[english,portuguese,spanish]{babel} % Language support for English, Portuguese, and Spanish
+\usepackage[style=iso]{datetime2} % Use ISO8601 date format
+\renewcommand{\arraystretch}{1.25}
+
+% Clors and links
+\usepackage{xcolor}
+\definecolor{NucPhys}{rgb}{0,0.5954,0.4046}
+\usepackage[hidelinks,colorlinks=true,linkcolor=NucPhys,urlcolor=NucPhys]{hyperref}
+
+% PDF attachments
+\usepackage{attachfile}
+\newcommand{\addfile}[1]{\textattachfile[color=0 0 0]{#1}{\faFile}}
+
+% Define page margins
+\geometry{
+  left=0.5cm,
+  right=0.5cm,
+  top=0.5cm,
+  bottom=0.5cm,
+  headheight=15pt,
+}
+
+% Define checkbox element
+\newcommand{\checkbox}[1]{\framebox(15,15){\ifnum#1=1 \textbf{X}\fi}}
+
+% Dotted line
+\usepackage{dashrule}
+\newcommand{\dotline}{\hdashrule[0.5ex][c]{6cm}{0.5pt}{0.5pt 0.5pt}}
+
+% Section title
+\newcommand{\sectiontitle}[1]{
+    \textbf{\color{NucPhys} \large #1}\\
+    \vspace{-0.2cm}
+    \hrule
+    \vspace{0.5cm}
+}
