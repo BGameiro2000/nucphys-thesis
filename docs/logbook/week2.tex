@@ -8,13 +8,17 @@
     \sectiontitle{To Do}
     \checkbox{0}\hspace{10pt}Analysis for energy resolution at 662keV\\~\\
     \checkbox{0}\hspace{10pt}Get familiar with scripts provided\\~\\
-    \checkbox{0}\hspace{10pt}Write own version of scripts\\~\\
+    \checkbox{0}\hspace{10pt}Write own versions of scripts\\~\\
     \checkbox{0}\hspace{10pt}Weekly meeting\\~\\
+    \checkbox{0}\hspace{10pt}Runs with Na22 for PET mode\\~\\
+    \checkbox{0}\hspace{10pt}Analysis of data in PET mode\\~\\
   \end{minipage}
   \begin{minipage}[t]{0.49\textwidth}
     \begin{minipage}[t][0.22\textheight][t]{\textwidth}
         \sectiontitle{Project}
-        Sterted with analysis of the energy resolution of each iTED using Cs137. Used it as a way to compare the anaylsis using ROOT, PyROOT, and PyData approaches.
+        Started with analysis of the energy resolution of each iTED using Cs137. Used it as a way to compare the analysis using ROOT, PyROOT, and PyData approaches.\\
+
+        Rewrote the scripts provided in order to get familiar with them.\\
     \end{minipage}
     \begin{minipage}[t][0.22\textheight][t]{\textwidth}
         \sectiontitle{Thesis}
@@ -33,6 +37,13 @@
 \vfill
 \begin{minipage}[t][0.2\textheight][t]{0.97\linewidth}
     \sectiontitle{Notes}
+    The best approach in terms of making the analysis compatible and easy to write seems to be a mixture of the available stacks:
+    \begin{itemize}
+      \item UpROOT for importing data from ROOT files
+      \item PyData for handling data structures
+      \item PyROOT has the main interface for analysis
+      \item ROOT (with C++) for macros
+    \end{itemize}
 \end{minipage}
 
 \newpage
