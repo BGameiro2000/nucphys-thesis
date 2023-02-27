@@ -64,15 +64,6 @@ const int ndetectors = 5; // 1 scatter and 4 absorvers
 Funstions
 ********/
 
-int Acquisition_Time(TTree detector_tree)
-{
-    const long time_init = detector_tree.GetMinimum("TimeStamp");
-    const long time_fin  = detector_tree.GetMaximum("TimeStamp");
-    int  time_acq  = round((time_fin-time_init)/pow(10,12));
-    
-    return time_acq;
-}
-
 int Acquisition_Time(TTree * detector_tree)
 {
     const long time_init = detector_tree->GetMinimum("TimeStamp");
@@ -80,28 +71,6 @@ int Acquisition_Time(TTree * detector_tree)
     int  time_acq  = round((time_fin-time_init)/pow(10,12));
     
     return time_acq;
-}
-
-float Alpha_Activity(TTree detector_tree)
-{
-    //float ADCmin_alpha[ndetectors] = {750,750,630,800,600}; //i-TED A
-    //float ADCmin_alpha[ndetectors] = {700,600,650,720,650}; //i-TED B
-    //float ADCmin_alpha[ndetectors] = {550,600,600,600,650}; //i-TED C
-    //float ADCmin_alpha[ndetectors] = {550,600,600,600,650}; //i-TED 
-    
-    TH1D* h;
-    float Resolution;
-
-    int  time_acq  = Acquisition_Time(detector_tree);
-    
-    detector_tree.Draw("Total_Deposited_Energy>>hist1(2000, 0.0, 2000.0)");
-    auto* h1 = gDirectory->Get("hist1");
-        
-	Resolution=h1 -> Integral(550,1400);
-	cout<<"Integral Alphas: "<<Resolution<<endl;
-	Resolution/=time_acq;
-	cout<<"Alpha rate (Hz): "<<Resolution<<endl;
-    return Resolution;
 }
 
 float Alpha_Activity(TTree * detector_tree)
@@ -112,18 +81,26 @@ float Alpha_Activity(TTree * detector_tree)
     //float ADCmin_alpha[ndetectors] = {550,600,600,600,650}; //i-TED 
     
     TH1D* h;
-    float Resolution;
+    double Alphas = 0.;
 
     int  time_acq  = Acquisition_Time(detector_tree);
+    int En;
+    detector_tree->SetBranchAddress("Total_Deposited_Energy", &En);
     
-    detector_tree -> Draw("Total_Deposited_Energy>>hist1(2000, 0.0, 2000.0)");
-    auto* h1 = gDirectory->Get("hist1");
+    for(int i=0; i<detector_tree->GetEntries(); i++){
         
-	Resolution=h1 -> Integral(550,1400);
-	cout<<"Integral Alphas: "<<Resolution<<endl;
-	Resolution/=time_acq;
-	cout<<"Alpha rate (Hz): "<<Resolution<<endl;
+        detector_tree->GetEntry(i);
+        
+        if ((750 < En)  && (En < 1400)) {
+          Alphas+=1.;
+        } ;
+        
+    };
     
-    return time_acq;
+	cout<<"Integral Alphas: "<<Alphas<<endl;
+	Alphas/=time_acq;
+	cout<<"Alpha rate (Hz): "<<Alphas<<endl;
+    
+    return Alphas;
 }
 
