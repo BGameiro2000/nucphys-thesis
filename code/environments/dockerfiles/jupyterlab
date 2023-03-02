@@ -35,7 +35,8 @@ RUN pip install --user \
                               jupyterlab-visualpython \
                               dexplot \
                               metakernel \
-                              modin[all]
+                              modin[all] \
+                              radioactivedecay
                               #auto-sklearn
 
 # Expose port and path
