@@ -29,7 +29,10 @@
     \begin{tabular*}{\columnwidth}{@{\extracolsep{\stretch{1}}}*{8}{c}@{}}
         \textbf{DateTime} & \textbf{Duration (s)} & \textbf{Detector mode} & \textbf{Source} & \textbf{Source mode} & \textbf{Goal} & \textbf{Comment} & \textbf{Sum} \\
         \hline \\
-         &  &  &  &  &  &  & \\
+        2022-03-01 15:23:59 & 60 & iTED-A & Cs137 & iTED-A-A2 & Energy resolution & 885,CW100ns & \addfile{2023-03-01.txt}\\
+        2022-03-01 15:57:52 & 60 & iTED-B & Cs137 & iTED-B-A2 & Energy resolution & 885,CW100ns & \addfile{2023-03-01.txt}\\
+        2022-03-01 16:50:45 & 60 & iTED-C & Cs137 & iTED-C-A1 & Energy resolution & 885,CW100ns & \addfile{2023-03-01.txt}\\
+        2022-03-01 17:38:46 & 60 & iTED-D & Cs137 & iTED-D-A1 & Energy resolution & 885,CW100ns & \addfile{2023-03-01.txt}\\
     \end{tabular*}
 \end{minipage}
 \vfill
@@ -42,7 +45,8 @@
       \item PyROOT has the main interface for analysis
       \item ROOT (with C++) for macros
     \end{itemize}
-    Identified which crystals had the poorest calibration and had the resolution change the most so that they can be acted upon before iTED is used.
+    Identified which crystals had the poorest calibration and had the resolution change the most so that they can be acted upon before iTED is used.\\
+    Configuration 885 gives huge files. About 30 GiB for each minute of acquisition.
 \end{minipage}
 
 \newpage
