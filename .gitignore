@@ -2,7 +2,7 @@
 .vscode/
 
 # CI/CD directories
-out/
+out/*.pdf
 
 # Data directories
 data/
