@@ -7,16 +7,18 @@
   \begin{minipage}[t]{0.49\textwidth}
     \sectiontitle{To Do}
     \checkbox{1}\hspace{10pt}Analysis for energy resolution at 662keV\\~\\
-    \checkbox{0}\hspace{10pt}New runs with Cs137 and config 885, window 200ns\\~\\
+    \checkbox{1}\hspace{10pt}New runs with Cs137 and config 885\\~\\
     \checkbox{1}\hspace{10pt}Get familiar with scripts provided\\~\\
-    \checkbox{0}\hspace{10pt}Weekly meeting\\~\\
+    \checkbox{1}\hspace{10pt}Runs with Eu152 and background for calibration\\~\\
+    \checkbox{0}\hspace{10pt}Energy calibration\\~\\
     \checkbox{0}\hspace{10pt}Runs with Na22 for PET mode\\~\\
     \checkbox{0}\hspace{10pt}Analysis of data in PET mode\\~\\
   \end{minipage}
   \begin{minipage}[t]{0.49\textwidth}
     \begin{minipage}[t][0.22\textheight][t]{\textwidth}
         \sectiontitle{Project}
-        Started with analysis of the energy resolution of each iTED using Cs137. Used it as a way to compare the analysis using ROOT, PyROOT, and PyData approaches. Used the results of the analysis to identify which crystals (mainly iTEDB4 and iTEDC3) should be checked before iTED restarts operations.
+        Started with analysis of the energy resolution of each iTED using Cs137. Used it as a way to compare the analysis using ROOT, PyROOT, and PyData approaches. Used the results of the analysis to identify which crystals should be checked before iTED restarts operations. Crystal was fixed by limiting the light input.\\
+        Calibration was performed using Eu152.
     \end{minipage}
     \begin{minipage}[t][0.22\textheight][t]{\textwidth}
         \sectiontitle{Thesis}
@@ -29,10 +31,18 @@
     \begin{tabular*}{\columnwidth}{@{\extracolsep{\stretch{1}}}*{8}{c}@{}}
         \textbf{DateTime} & \textbf{Duration (s)} & \textbf{Detector mode} & \textbf{Source} & \textbf{Source mode} & \textbf{Goal} & \textbf{Comment} & \textbf{Sum} \\
         \hline \\
-        2022-03-01 15:23:59 & 60 & iTED-A & Cs137 & iTED-A-A2 & Energy resolution & 885,CW100ns & \addfile{2023-03-01.txt}\\
-        2022-03-01 15:57:52 & 60 & iTED-B & Cs137 & iTED-B-A2 & Energy resolution & 885,CW100ns & \addfile{2023-03-01.txt}\\
-        2022-03-01 16:50:45 & 60 & iTED-C & Cs137 & iTED-C-A1 & Energy resolution & 885,CW100ns & \addfile{2023-03-01.txt}\\
-        2022-03-01 17:38:46 & 60 & iTED-D & Cs137 & iTED-D-A1 & Energy resolution & 885,CW100ns & \addfile{2023-03-01.txt}\\
+        2022-03-01 15:23:59 & 60 & iTED-A & Cs137 & iTED-A-A2 & Energy resolution & 885,CW100ns & Drop\\
+        2022-03-01 15:57:52 & 60 & iTED-B & Cs137 & iTED-B-A2 & Energy resolution & 885,CW100ns & Drop\\
+        2022-03-01 16:50:45 & 60 & iTED-C & Cs137 & iTED-C-A1 & Energy resolution & 885,CW100ns & Drop\\
+        2022-03-01 17:38:46 & 60 & iTED-D & Cs137 & iTED-D-A1 & Energy resolution & 885,CW100ns & Drop\\
+        2022-03-01 15:22:31 & 300 & iTED-B & Cs137 & iTED-A-A2 & Check fix & 888,CW100ns & \addfile{2023-03-02.txt}\\
+        2022-03-01 15:10:36 & 300 & iTED-B & Cs137 & iTED-A-A2 & Check fix & 8811,CW100ns & \addfile{2023-03-02.txt}\\
+        2022-03-01 16:34:30 & 300 & iTED-A & Eu152 & iTED-A-A2 & Energy calibration & 888,CW100ns & \addfile{2023-03-02.txt}\\
+        2022-03-01 17:10:31 & 300 & iTED-B & Eu152 & iTED-B-A2 & Energy calibration & 888,CW100ns & \addfile{2023-03-02.txt}\\
+        2022-03-01 17:17:42 & 300 & iTED-C & Eu152 & iTED-C-A1 & Energy calibration & 888,CW100ns & \addfile{2023-03-02.txt}\\
+        2022-03-01 17:23:40 & 300 & iTED-D & Eu152 & iTED-D-A1 & Energy calibration & 888,CW100ns & \addfile{2023-03-02.txt}\\
+        2022-03-01 23:41:55 & 60 & + & BGND & None & Energy calibration & 888,CW100ns & \addfile{2023-03-02.txt}\\
+        2022-03-01 23:57:51 & 60 & + & BGND & None & Energy calibration & 888,CW100ns & \addfile{2023-03-02.txt}\\
     \end{tabular*}
 \end{minipage}
 \vfill
@@ -45,7 +55,7 @@
       \item PyROOT has the main interface for analysis
       \item ROOT (with C++) for macros
     \end{itemize}
-    Identified which crystals had the poorest calibration and had the resolution change the most so that they can be acted upon before iTED is used.\\
+    Identified which crystals had the poorest calibration and had the resolution change the most (iTEDB4) so that they can be acted upon before iTED is used. It was due to light input, fixed by using gum.\\
     Configuration 885 gives huge files. About 30 GiB for each minute of acquisition.
 \end{minipage}
 
