@@ -15,7 +15,9 @@ variables:
 
 website:
   stage: build
-  image: klakegg/hugo
+  image:
+    name: klakegg/hugo
+    entrypoint: [""]
   script:
     - mkdir -p out
     - cd ./docs/site/
