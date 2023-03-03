@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+mkdir -p out
+
+scriptname="MAKENB"
+makefiles=$(find . -name "$scriptname" -printf '%h\n')
+
+for f in $makefiles; do
+    echo "compiling $f"
+    pushd $f > /dev/null
+    sh $scriptname
+    popd
+done
+
+find . -name "*.html" | xargs -I arg mv arg out/
+
+ls out

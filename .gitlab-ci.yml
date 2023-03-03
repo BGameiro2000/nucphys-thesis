@@ -3,7 +3,7 @@ documents:
   image: thomasweise/docker-texlive-full
   script:
     - mkdir -p out
-    - ./MAKEALL
+    - ./MAKEALLDOCS
     - ls out
   artifacts:
     paths: 
@@ -26,6 +26,18 @@ website:
   artifacts:
     paths:
     - out
+    expire_in: 1 hour
+
+notebooks:
+  stage: build
+  image: bgameiro/arch-jupyterlab
+  script:
+    - mkdir -p out
+    - ./MAKEALLDOCS
+    - ls out
+  artifacts:
+    paths: 
+      - out
     expire_in: 1 hour
 
 pages:
