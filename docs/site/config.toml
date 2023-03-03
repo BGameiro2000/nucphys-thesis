@@ -74,7 +74,11 @@ ignoreErrors = ["error-remote-getjson"]
     [[Params.Tree.Branch]]
     folderName = "my_notebooks"
     # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
-    files = [ ]
+    files = [
+      ["PyROOT_resolution_Cs137v1.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v1.ipynb"],
+      ["PyROOT_resolution_Cs137v2.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v2.ipynb"],
+      ["PyROOT_resolution_Cs137v3.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v3.ipynb"]
+    ]
 
 [module]
   [module.hugoVersion]
