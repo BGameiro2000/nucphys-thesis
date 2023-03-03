@@ -25,7 +25,7 @@ website:
     - mv -v ./public/* ../../out/
   artifacts:
     paths:
-    - public
+    - out
     expire_in: 1 hour
 
 pages:
