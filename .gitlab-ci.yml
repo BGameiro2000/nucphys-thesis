@@ -1,4 +1,4 @@
-compile:
+documents:
   stage: build
   image: thomasweise/docker-texlive-full
   script:
@@ -10,6 +10,22 @@ compile:
       - out
     expire_in: 1 hour
 
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+website:
+  stage: build
+  image: klakegg/hugo
+  script:
+    - mkdir -p out
+    - cd ./docs/site/
+    - hugo
+    - mv -v ./public/* ../../out/
+  artifacts:
+    paths:
+    - public
+    expire_in: 1 hour
+
 pages:
   stage: deploy
   script:
@@ -19,5 +35,3 @@ pages:
     paths: 
       - public
     expire_in: 1 day
-  rules:
-    - if: $CI_COMMIT_BRANCH == "main"

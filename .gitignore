@@ -170,3 +170,17 @@ cython_debug/
 *.exe
 *.out
 *.app
+
+# Generated files by hugo
+docs/site/public/
+docs/site/resources/_gen/
+docs/site/assets/jsconfig.json
+docs/site/hugo_stats.json
+
+# Executable may be added to repository
+docs/site/hugo.exe
+docs/site/hugo.darwin
+docs/site/hugo.linux
+
+# Temporary lock file while building
+docs/site/.hugo_build.lock

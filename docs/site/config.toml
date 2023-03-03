@@ -1,0 +1,82 @@
+baseURL = "https://ific.bgameiro.me/"
+title = "BGameiro's NucPhys Thesis"
+author = "BGameiro"
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+
+[Params]
+
+# Additions start here
+  [Params.Navbar]
+  use = false
+  
+  [Params.Extensions]
+  use = true
+  ext = ".sh" # extension to add after single page
+# Additions stop here
+    
+  description = "BGameiro's NucPhys Thesis"
+  [Params.Terminal]
+  scheme = "own"
+
+  userName = "BGameiro"
+  pcName = "IFIC"
+  workDir = "HYMNS"
+  profile = "profile.txt"
+
+  # Note: speed at which text is displayed on the terminal
+  # Note: if set to 0, typing animation will be disabled
+  # Note:
+  # Note: if you want to enable Mathjax, you need to set it to 0
+  # Note: and set "math: true" at front matter in your Markdown file
+  ps1Delay = 10 # prompt speed : [userName]@[pcName]:~/$ , [userName]@[pcName]:~/[workDir]$
+  stdoutDelay = 10 # stdout speed : [description] , files in Params.Tree
+  commandDelay = 50 # command speed : cd [workDir] , cat [profile] , tree ./[folderName]/
+
+  # terminalDelay = 20 : deprecated
+
+  # Note: speed at which text is displayed on the activity pages
+  # Note: if set to 0, typing animation will be disabled
+  # Note: 
+  # Note: if you want to enable Mathjax, you need to set it to 0
+  # Note: and set "math: true" at front matter in your Markdown file
+  titleDelay = 0 # title speed : "title" in front matter
+  contentDelay = 0 # content speed : content in .md file
+
+  # activityDelay = 5 : deprecated
+
+  description = """
+
+  Hi!
+  I am Bernardo Gameiro, a NucPhys master student.
+  This page contains information regarding
+  my thesis project at IFIC.
+  
+  """
+
+  # Note: If you want to use a Markdown file, you can use the following
+  # description = "/description.md"
+  # Note: and put the description.md in /content/description.md
+
+  [Params.Tree]
+  use = true
+  
+    [[Params.Tree.Branch]]
+    folderName = "my_documents"
+    # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
+    files = [ 
+        ["Thesis", "https://bgameiro.gitlab.io/nucphys-thesis/Thesis_NucPhys_BGameiro_2023.pdf"],
+        ["LogBook", "https://bgameiro.gitlab.io/nucphys-thesis/LogBook_NucPhys_BGameiro_2023.pdf"],
+        ["Email", "mailto:contact@bgameiro.me"],
+    ]
+
+    [[Params.Tree.Branch]]
+    folderName = "my_notebooks"
+    # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
+    files = [ ]
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.85.0"
