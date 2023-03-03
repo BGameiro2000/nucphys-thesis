@@ -10,7 +10,8 @@
     \checkbox{1}\hspace{10pt}New runs with Cs137 and config 885\\~\\
     \checkbox{1}\hspace{10pt}Get familiar with scripts provided\\~\\
     \checkbox{1}\hspace{10pt}Runs with Eu152 and background for calibration\\~\\
-    \checkbox{0}\hspace{10pt}Energy calibration\\~\\
+    \checkbox{1}\hspace{10pt}Energy calibration\\~\\
+    \checkbox{0}\hspace{10pt}Effect of 200ns window on resolution and calibration\\~\\
     \checkbox{0}\hspace{10pt}Runs with Na22 for PET mode\\~\\
     \checkbox{0}\hspace{10pt}Analysis of data in PET mode\\~\\
   \end{minipage}
@@ -50,7 +51,6 @@
     \sectiontitle{Notes}
     The best approach in terms of making the analysis compatible and easy to write seems to be a mixture of the available stacks:
     \begin{itemize}
-      \item UpROOT for importing data from ROOT files
       \item PyData for handling data structures
       \item PyROOT has the main interface for analysis
       \item ROOT (with C++) for macros
