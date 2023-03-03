@@ -33,7 +33,7 @@ notebooks:
   image: bgameiro/arch-jupyterlab
   script:
     - mkdir -p out
-    - ./MAKEALLDOCS
+    - ./MAKEALLNB
     - ls out
   artifacts:
     paths: 
