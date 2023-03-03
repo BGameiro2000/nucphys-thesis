@@ -16,7 +16,7 @@ variables:
 website:
   stage: build
   image:
-    name: klakegg/hugo
+    name: klakegg/hugo:ext-alpine-ci
     entrypoint: [""]
   script:
     - mkdir -p out
