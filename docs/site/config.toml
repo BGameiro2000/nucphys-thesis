@@ -49,9 +49,10 @@ ignoreErrors = ["error-remote-getjson"]
   description = """
 
   Hi!
-  I am Bernardo Gameiro, a NucPhys master student.
-  This page contains information regarding
-  my thesis project at IFIC.
+  I am Bernardo Gameiro.
+  This page contains information
+  regarding my thesis at IFIC,
+  as a NucPhys master student.
   
   """
 
