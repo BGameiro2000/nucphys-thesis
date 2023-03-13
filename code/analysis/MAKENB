@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-jupyter nbconvert --execute --to html PyROOT_resolution_Cs137v1.ipynb;
-jupyter nbconvert --execute --to html PyROOT_resolution_Cs137v2.ipynb;
-jupyter nbconvert --execute --to html PyROOT_resolution_Cs137v3.ipynb;
+jupyter nbconvert --execute --to html PyROOT_resolution_Cs137v1.ipynb --HTMLExporter.theme=dark --template lab;
+jupyter nbconvert --execute --to html PyROOT_resolution_Cs137v2.ipynb --HTMLExporter.theme=dark --template lab;
+jupyter nbconvert --execute --to html PyROOT_resolution_Cs137v3.ipynb --HTMLExporter.theme=dark --template lab;
