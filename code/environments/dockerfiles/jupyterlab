@@ -10,6 +10,7 @@ RUN pacman --noconfirm -Syyu \
                               jupyterlab \
                               python-ipykernel \
                               python-ipywidgets \
+                              jupyterlab-widgets \
                               # PyData
                               python-scipy \
                               python-pandas \
@@ -36,7 +37,8 @@ RUN pip install --user \
                               dexplot \
                               metakernel \
                               modin[all] \
-                              radioactivedecay
+                              radioactivedecay \
+                              voila
                               #auto-sklearn
 
 # Expose port and path

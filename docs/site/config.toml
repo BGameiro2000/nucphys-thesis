@@ -78,7 +78,8 @@ ignoreErrors = ["error-remote-getjson"]
     files = [
       ["PyROOT_resolution_Cs137v1.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v1.html"],
       ["PyROOT_resolution_Cs137v2.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v2.html"],
-      ["PyROOT_resolution_Cs137v3.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v3.html"]
+      ["PyROOT_resolution_Cs137v3.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v3.html"],
+      ["PyROOT_resolution_Cs137v4.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v4.html"]
     ]
 
 [module]

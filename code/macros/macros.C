@@ -73,7 +73,7 @@ int Acquisition_Time(TTree * detector_tree)
     return time_acq;
 }
 
-float Alpha_Activity(TTree * detector_tree)
+float Alpha_Activity(TTree * detector_tree) // Seems to have a problem
 {
     //float ADCmin_alpha[ndetectors] = {750,750,630,800,600}; //i-TED A
     //float ADCmin_alpha[ndetectors] = {700,600,650,720,650}; //i-TED B
