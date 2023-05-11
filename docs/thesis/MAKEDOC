@@ -2,7 +2,7 @@
 
 yes '' | latexmk -f -pdflatex=xelatex -pdf -jobname="Thesis_NucPhys_BGameiro_2023" main.tex
 
-find . -regextype posix-egrep -regex ".*\.(out|aux|fdb_latexmk|fls|log|gz|bcf|xml|bbl|blg|lof|lol|lot|toc)$" -type f -delete
+find . -regextype posix-egrep -regex ".*\.(out|aux|fdb_latexmk|fls|gz|bcf|xml|bbl|blg|lof|lol|lot|toc)$" -type f -delete
 
-rm main.pdf
+#rm main.pdf
 rm Thesis_NucPhys_BGameiro_2023-blx.bib

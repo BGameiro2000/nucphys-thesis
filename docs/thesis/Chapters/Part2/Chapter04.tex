@@ -1,19 +1,167 @@
 %************************************************
 %************************************************
 %************************************************
-\chapter{Imaging Techniques}\label{ch:techniques}
+\chapter{Multi i-TED detector system}\label{ch:multi-ited}
 %************************************************
 %************************************************
 %************************************************
 
 %************************************************
 %************************************************
-\section{Classical Approaches}
+\section{Initial status}\label{sec:initial}
+%************************************************
+%************************************************
+
+Upon the start of this thesis project, the \ac{i-TED} detectors had not been used for several months, since the completion of its campaign at the \ac{nToF} facility of \ac{CERN} in 2022. It was also placed on the experimental hall of \ac{IFIC}, whereas its last characterization took place in the underground facilities of \ac{CERN}.
+
+The last characterization of the \ac{i-TED} detectors, and reference to the present work, refers to the module \ac{i-TED}-A and is presented in .
+
+With both the time and difference in conditions of the last characterization in mind, a new one was performed.
+
+A preliminary characterization was performed using a Cs-137 source and the previous calibration. The energy resolutions obtained are present in \ref{}, and offer an overview of the stability of the system as well as serving as a starting point into the upgrades described in the next section.
+
+%************************************************
+%************************************************
+\section{Upgrades}\label{sec:upgrades}
+%************************************************
+%************************************************
+
+The multi \ac{i-TED} detector is a complex system made of 1280 pixels coupled to 20 scintillation crystals divided into 4 modules. Furthermore, it is composed of scintillators, \ac{SiPM}s and \ac{ASIC}s, all of which influence resolution, efficiency and position reconstruction.
+
+With that in mind, the upgrades performed were done so based on complementary measurements that helped identify which component of the system needed upgrade.
+
+This section will focus on the different problems faced, the identification of its cause and the solutions.
+
+%************************************************
+\subsection{Heatmaps}
+%************************************************
+
+One way of evaluating the status of the system is by looking at the heatmap of a given scintillator for a given measurement.
+
+There are two types of heatmaps available, counts per pixel and interaction density per position.
+
+For each crystal the two heatmaps are generated, the first based directly on the measurement and the second consisting on the reconstructed position of the interaction within the crystal. The algorithm used for the position reconstruction is described in \cite{}.
+
+For reference, \ref{} contains the expected result for each of the heatmaps.
+
+\subsubsection{Position artifacts}
+
+When plotting the heatmaps of the reconstructed positions, the patterns presented in \ref{} were sometimes observed.
+
+The consistency of the position of the patterns over multiple measurements and crystals led those artifacts to be identified as the result of a misfit of the position reconstruction algorithm, influenced by the initial parameters.
+
+This was only present when using the anger algorithm, \cite{}. By using the --- algorithm, \cite{}, instead the artifacts disappeared.
+
+\subsubsection{Position misreconstruction}
+
+When plotting the heatmaps of the reconstructed positions for each crystal, cases such as \ref{} were observed. This corresponds to a misreconstruction of the interaction position in the crystal in certain zones that spawn the same crystals in all measurements.
+
+Those events were identifiable with measurements of sources that would illuminate the full crystal or, otherwise, not provoke the patterns observed in those regions.
+
+Those patterns were identified as being caused by the crystals, as changing one crystal with patterns with one without caused them to follow the crystal.
+
+This was identified as being caused by "clouds" in the crystal growth, as shown in \ref{}.
+
+If the cloud was small and far from the window, the patterns were not observed.
+
+\subsubsection{Dark zones}
+
+Sometimes it was observed in the heatmaps of both the events and the reconstructed positions that certain regions had considerably lower number of counts. It was  noticeable for all measurements whether for background or sources.
+
+Dismounting and remounting the crystals with the same \ac{SiPM} solved the problem creating more homogeneous heatmaps.
+
+This was identified as being caused by a poor coupling of the scintillator to the \ac{SiPM}. Reapplying optical grease solved the problems. It was noted that, even for grease applied a long time beforehand, uneven pressure applied by the detector casing resulted in the grease flowing out of the areas with higher pressure resulting in a bad optical coupling as evident by \ref{}.
+
+\subsubsection{Multi-pixel sharp maximums}
+
+Some pixel heatmaps presented sharp maximums that spawn a few neighboring pixels, even for background measurements.
+
+This effect was present mostly near the sides of the casing rather than the center.
+
+Measurements in dark conditions yielded better results and, as such, the problem was identified as light input and solved with black tape or gum near the problematic areas. This was due to fissures in the casing that were not identifiable by sight. The fissures exist due to the thinness of the casing, necessary to minimize the reactions in conditions of high neutron and \gamma flux, such as at \ac{nToF}.
+
+\subsubsection{Single-pixel sharp maximums}
+
+Besides the sharp maximum in neighboring pixels, there were also isolated ones randomly distributed throughout the different crystals.
+
+By setting higher thresholds for the minimum value needed to trigger those specific pixels, the maximums disappeared.
+
+This effect is due to different noise and gain of each individual pixel.
+
+This was solved by setting different per-pixel thresholds.
+
+To do so, background measurements with difference thresholds were performed, and a program was written to iterate over each crystal and based on a given parameter, define which pixels had to increase the threshold until those pixels adhered to the parameter.
+
+The parameter was set as 5 times the mean number of events in a given crystal and the thresholds were set between 7 and 13, obtaining the following distribution:
+
+TABLE
+
+th | n pixels
+
+The per crystal parameter was set as different crystals can have different responses, namely in terms of efficiency. The use of previous background measurement was also important as it allowed for longer measurements than if it was set automatically during the initial calibration of the detector.
+
+The improvements in homogeneity are better represented by the box plot of \ref{} that shows, for each crystal, the distribution of the number of counts per pixel.
+
+%************************************************
+\subsection{Timing}
+%************************************************
+
+For each crystal of \ac{i-TED}, an interaction is defined as the sum of the detections in all 64 pixels in a predefined time window that starts with the first pixel firing. Notice that the time window is only defined of the sum of the detections in the pixels is above a threshold.
+
+The simplest case for defining the time of the interaction is by using the timestamp of the first pixel.
+
+Following the work of \cite{}, a study of other parameters was performed.
+
+For this \ac{i-TED}-D was used with the scatterer and absorber planes at the maximum distance and a Na22 source in the middle of the planes. This source was selected for its emission of two 511keV \gamma at 180$^\circ$ characteristic of the electron-positron annihilation, which allowed simultaneous measurements in both planes.
+
+This way, by selecting the scatterer and one absorber, doing energy cuts around the 511kEV peak and plotting the time difference between the events in a coincidence window, a peak centered at 0 was obtained with a standard deviation of twice the time resolution. Deviations from 0 reflected deviation of the source of the central position of the source.
+
+From here, the study was carried out using two parameters: the number of pixels to take into account ($N_p$) and the weight, as an exponent of the energy measured by the pixel event when calculating the average of the timestamp (W):
+
+\begin{equation}
+    t_\text{event}=\frac{\sum_{i}^{min\{N_p,N_t\}}t_\text{pixel}\times E_i^W}{\sum_{i}^{min\{N_p,N_t\}}E_i^W}
+\end{equation}
+
+Two things to take into account are that if the number of pixel events to take into account is greater than the total number of pixel events in the interaction ($N_p<N_t$), then all pixel events are used; and if the weight ($E_i^W$) is small enough that it can't be written in a \texttt{C++ long double}, then it is considered 0, meaning that timestamp is not taken into account when calculating the time of the interaction.
+
+The result obtained are presented in \ref{}.
+
+Two minimums were identified for $W=0, N_p=9$ and $W=1, N_p=25$.
+
+The configuration $W=1, N_p=25$ was taken not only because of having the lowest standard deviation for the peak, but also because it was identified that the distribution of the values is considerably skew towards the central value, whereas for $W=0, N_p=9$ there is a presence of more events in the tails of the distribution.
+
+%************************************************
+\subsection{Resolution}
+%************************************************
+
+\subsubsection{Factors to take into account}
+
+%************************************************
+%************************************************
+\section{Characterization}\label{sec:characterization}
 %************************************************
 %************************************************
 
 %************************************************
+\subsection{Energy resolution}
 %************************************************
-\section{Machine Learning}
+
+\subsubsection{Singles resolution}
+
+\subsubsection{Coincidences resolution}
+
 %************************************************
+\subsection{Image reconstruction}
+%************************************************
+
+%************************************************
+\subsection{Counting rate}
+%************************************************
+
+%************************************************
+\subsection{Alpha activity}
+%************************************************
+
+%************************************************
+\subsection{Timing resolution}
 %************************************************
