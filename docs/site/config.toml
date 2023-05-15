@@ -85,6 +85,8 @@ ignoreErrors = ["error-remote-getjson"]
       ["Multi_iTED_CRTv2.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/Multi_iTED_CRTv2.html"],
       ["Multi_iTED_CRTv3.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/Multi_iTED_CRTv3.html"],
       ["Multi_iTED_CRTv4.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/Multi_iTED_CRTv4.html"],
+      ["Calibration.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/Spectrum_conversion.html"],
+      ["*Individual_thresholds.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/Spectrum_conversion.html"],
     ]
 
 [module]
