@@ -117,7 +117,7 @@ This was identified as being caused by a poor coupling of the scintillator to th
     \centering
     \subfloat[\centering Pixels]{{\includegraphics[width=5cm]{gfx/Dark.png} }}%
     \qquad
-    \subfloat[\centering Crystal]{{\includegraphics[width=5cm]{gfx/Dark.jpeg} }}%
+    \subfloat[\centering \ac{SiPM}]{{\includegraphics[width=5cm]{gfx/Dark.jpeg} }}%
     \caption{Dark zones present in the heatmap.}%
     \label{fig:DarkZonesHeatmap}
 \end{figure}
@@ -300,6 +300,9 @@ Integration window and threshold configuration:\\
 
 The counting rate depends mainly on 4 conditions: the source/background, the activity of the crystal (mainly alpha, see \ref{ssec:alpha}), the thresholds, and the integration window.
 
+
+The values are normalized in time.
+
 %************************************************
 \subsection{Alpha activity}\label{ssec:alpha}
 %************************************************
@@ -321,6 +324,8 @@ For this study, the 88c configuration and a 250ns integration window were used.
     4    &222.20 & 215.39 & 192.53 &231.87 \\
     \bottomrule
 \end{tabular}
+
+The values are normalized in time.
 
 %************************************************
 \subsection{Timing resolution}
