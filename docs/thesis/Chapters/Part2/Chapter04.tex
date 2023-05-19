@@ -14,7 +14,7 @@
 
 Upon the start of this thesis project, the \ac{i-TED} detectors had not been used for several months, since the completion of its campaign at the \ac{nToF} facility of \ac{CERN} in 2022. It was also placed on the experimental hall of \ac{IFIC}, whereas its last characterization took place in the underground facilities of \ac{CERN}.
 
-The last characterization of the \ac{i-TED} detectors, and reference to the present work, refers to the module \ac{i-TED}-A and is presented in .
+The last characterization of the \ac{i-TED} detectors, and reference to the present work, refers to the module \ac{i-TED}-A and is presented in \cite{}.
 
 With both the time and difference in conditions of the last characterization in mind, a new one was performed.
 
@@ -33,36 +33,77 @@ With that in mind, the upgrades performed were done so based on complementary me
 This section will focus on the different problems faced, the identification of its cause and the solutions.
 
 %************************************************
-\subsection{Heatmaps}
+\subsection{Heatmaps}\label{ssec:heatmaps}
 %************************************************
 
 One way of evaluating the status of the system is by looking at the heatmap of a given scintillator for a given measurement.
 
 There are two types of heatmaps available, counts per pixel and interaction density per position.
 
-For each crystal the two heatmaps are generated, the first based directly on the measurement and the second consisting on the reconstructed position of the interaction within the crystal. The algorithm used for the position reconstruction is described in \cite{}.
+For each crystal the two heatmaps are generated, the first based directly on the measurement and the second consisting on the reconstructed position of the interaction within the crystal. The algorithm used for the position reconstruction is described in \cite{BABIANO20191, BALIBREACORREA2021165249}.
 
-For reference, \ref{} contains the expected result for each of the heatmaps.
+For reference, \ref{fig:NormalHeadtmap} contains the expected result for each of the heatmaps.
+
+\begin{figure}[h!]
+    \centering
+    \subfloat[\centering Pixels]{{\includegraphics[width=5cm]{gfx/Normal.png} }}%
+    \qquad
+    \subfloat[\centering Position reconstruction]{{\includegraphics[width=5cm]{gfx/Normal2.png} }}%
+    \caption{Normal heatmaps for a given crystal.}%
+    \label{fig:NormalHeadtmap}%
+\end{figure}
 
 \subsubsection{Position artifacts}
 
-When plotting the heatmaps of the reconstructed positions, the patterns presented in \ref{} were sometimes observed.
+When plotting the heatmaps of the reconstructed positions, the patterns presented in \ref{fig:PositionArtifactsHeatmap} were sometimes observed.
 
 The consistency of the position of the patterns over multiple measurements and crystals led those artifacts to be identified as the result of a misfit of the position reconstruction algorithm, influenced by the initial parameters.
 
-This was only present when using the anger algorithm, \cite{}. By using the --- algorithm, \cite{}, instead the artifacts disappeared.
+This was only present when using the Anger algorithm. By using the --- algorithm instead, the artifacts disappeared. Both algorithms are described in \cite{BABIANO20191}.
 
-\subsubsection{Position misreconstruction}
+\begin{figure}[h!]
+    \centering
+    \subfloat[\centering Pixels]{{\includegraphics[width=5cm]{gfx/Normal.png} }}% %CHANGE
+    \caption{Position artifacts present in the heatmap.}%
+    \label{fig:PositionArtifactsHeatmap}
+\end{figure}
 
-When plotting the heatmaps of the reconstructed positions for each crystal, cases such as \ref{} were observed. This corresponds to a misreconstruction of the interaction position in the crystal in certain zones that spawn the same crystals in all measurements.
+\subsubsection{Localized position misreconstruction}
+
+When plotting the heatmaps of the reconstructed positions for each crystal, cases such as \ref{fig:CloudsHeatmap} were observed. This corresponds to a misreconstruction of the interaction position in the crystal in certain zones that spawn the same crystals in all measurements.
 
 Those events were identifiable with measurements of sources that would illuminate the full crystal or, otherwise, not provoke the patterns observed in those regions.
 
 Those patterns were identified as being caused by the crystals, as changing one crystal with patterns with one without caused them to follow the crystal.
 
-This was identified as being caused by "clouds" in the crystal growth, as shown in \ref{}.
+This was identified as being caused by "clouds" in the crystal growth, as shown in \ref{fig:CloudsHeatmap}.
 
 If the cloud was small and far from the window, the patterns were not observed.
+
+\begin{figure}[h!]
+    \centering
+    \subfloat[\centering Position reconstruction]{{\includegraphics[width=5cm]{gfx/Clouds.png} }}%
+    \qquad
+    \subfloat[\centering Crystal]{{\includegraphics[width=5cm]{gfx/Normal.png} }}% CHANGE
+    \caption{Position misreconstruction due to clouds for a given crystal.}%
+    \label{fig:CloudsHeatmap}%
+\end{figure}
+
+\subsubsection{General position misreconstruction}
+
+In other cases, the position reconstructed presented patterns that weren't localized but that spawn the whole heatmap.
+
+This was identified as a mismatch between the physical position of the pixel in the \ac{SiPM} and its representation in the heatmap.
+This was due to the different possible labels of the pixels in a given \ac{SiPM}, which corresponds to a factory characteristic.
+
+The effect aforementioned can be seen in \ref{fig:PositionMisreconstructionHeatmap}.
+
+\begin{figure}[h!]
+    \centering
+    \subfloat[\centering Pixels]{{\includegraphics[width=5cm]{gfx/Normal.png} }}% %CHANGE
+    \caption{General position misreconstruction present in the heatmap.}%
+    \label{fig:PositionMisreconstructionHeatmap}
+\end{figure}
 
 \subsubsection{Dark zones}
 
@@ -72,17 +113,35 @@ Dismounting and remounting the crystals with the same \ac{SiPM} solved the probl
 
 This was identified as being caused by a poor coupling of the scintillator to the \ac{SiPM}. Reapplying optical grease solved the problems. It was noted that, even for grease applied a long time beforehand, uneven pressure applied by the detector casing resulted in the grease flowing out of the areas with higher pressure resulting in a bad optical coupling as evident by \ref{}.
 
+\begin{figure}[h!]
+    \centering
+    \subfloat[\centering Pixels]{{\includegraphics[width=5cm]{gfx/Dark.png} }}%
+    \qquad
+    \subfloat[\centering Crystal]{{\includegraphics[width=5cm]{gfx/Normal.png} }}%
+    \caption{Dark zones present in the heatmap.}%
+    \label{fig:DarkZonesHeatmap}
+\end{figure}
+
 \subsubsection{Multi-pixel sharp maximums}
 
 Some pixel heatmaps presented sharp maximums that spawn a few neighboring pixels, even for background measurements.
 
-This effect was present mostly near the sides of the casing rather than the center.
+This effect was present mostly near the sides of the casing rather than the center, as shown in \ref{fig:LightHearmap}.
 
-Measurements in dark conditions yielded better results and, as such, the problem was identified as light input and solved with black tape or gum near the problematic areas. This was due to fissures in the casing that were not identifiable by sight. The fissures exist due to the thinness of the casing, necessary to minimize the reactions in conditions of high neutron and \gamma flux, such as at \ac{nToF}.
+Measurements in dark conditions yielded better results and, as such, the problem was identified as light input and solved with black tape or gum near the problematic areas. This was due to fissures in the casing that were not identifiable by sight. The fissures exist due to the thinness of the casing, necessary to minimize the reactions in conditions of high neutron and $\gamma$ flux, such as at \ac{nToF}.
+
+\begin{figure}[h!]
+    \centering
+    \subfloat[\centering Multi-pixel]{{\includegraphics[width=5cm]{gfx/Light.png} }}%
+    \qquad
+    \subfloat[\centering Single-pixel]{{\includegraphics[width=5cm]{gfx/Noise.png} }}%
+    \caption{Sharp maximums present in the heatmap.}%
+    \label{fig:LightHeatmap}
+\end{figure}
 
 \subsubsection{Single-pixel sharp maximums}
 
-Besides the sharp maximum in neighboring pixels, there were also isolated ones randomly distributed throughout the different crystals.
+Besides the sharp maximum in neighboring pixels, there were also isolated ones randomly distributed throughout the different crystals, as present in \ref{fig:LightHeatmap}.
 
 By setting higher thresholds for the minimum value needed to trigger those specific pixels, the maximums disappeared.
 
@@ -110,9 +169,9 @@ For each crystal of \ac{i-TED}, an interaction is defined as the sum of the dete
 
 The simplest case for defining the time of the interaction is by using the timestamp of the first pixel.
 
-Following the work of \cite{}, a study of other parameters was performed.
+Following the work of \cite{LAMPROU202010}, a study of other parameters was performed.
 
-For this \ac{i-TED}-D was used with the scatterer and absorber planes at the maximum distance and a Na22 source in the middle of the planes. This source was selected for its emission of two 511keV \gamma at 180$^\circ$ characteristic of the electron-positron annihilation, which allowed simultaneous measurements in both planes.
+For this \ac{i-TED}-D was used with the scatterer and absorber planes at the maximum distance and a Na22 source in the middle of the planes. This source was selected for its emission of two 511keV $\gamma$ at 180$^\circ$ characteristic of the electron-positron annihilation, which allowed simultaneous measurements in both planes.
 
 This way, by selecting the scatterer and one absorber, doing energy cuts around the 511kEV peak and plotting the time difference between the events in a coincidence window, a peak centered at 0 was obtained with a standard deviation of twice the time resolution. Deviations from 0 reflected deviation of the source of the central position of the source.
 
@@ -134,7 +193,37 @@ The configuration $W=1, N_p=25$ was taken not only because of having the lowest 
 \subsection{Resolution}
 %************************************************
 
+The energy resolution is one of the most important parameters to optimize due to its influence on the imaging reconstruction, \ref{}.
+
 \subsubsection{Factors to take into account}
+
+The energy of the interacting radiation is proportional to the light collected by the \ac{SiPM}. As such, it is important to take into account the effects of \ref{ssec:heatmaps} as well a proper optical coupling to ensure optimal light transference from the crystal to the \ac{SiPM}.
+
+\subsubsection{ASIC temperature}
+
+One of the parameters that most changed the energy resolution was the temperature of the PETsys \ac{ASIC}s which integrate the signal of each one of the 64 pixels for each crystal.
+
+The effect of this parameter, although noticeable, was not studied as the acquisition system was not prepared to include temperature information.
+
+\paragraph*{Temperature}
+
+Differences in the ambient temperature resulted in noticeable shifts of the well-known peaks of the sources used with other identical experimental conditions.
+
+\paragraph*{Temperature change}
+
+The change in temperature within a measurement resulted in a shift of the gain, and thus, of the peaks resulting in a higher perceptible energy resolution.
+
+\subsubsection{Integration windows}
+
+Another parameter that influences the energy resolution of the detector is the time window used to consider an interaction in a given crystal.
+
+Currently, an interaction is defined as a time window over all pixels of a given crystal whose energy (in ADC) is above a given threshold.
+
+For measurements that don't have a very high flux of particle it is possible to increase the value of this window, obtaining more pixel events that correspond to the same interaction, resulting in a better energy resolution.
+
+It is important to take into account that for very high flux increasing this window may result in including pixel events that correspond to the next interaction in the crystal, resulting in pileup.
+
+In the present project this integration window was kept between 100 and 250ns. Previously, this window had been fixed at 100ns, as in \ref{}.
 
 %************************************************
 %************************************************

@@ -76,17 +76,18 @@ ignoreErrors = ["error-remote-getjson"]
     folderName = "my_notebooks"
     # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
     files = [
-      ["PyROOT_resolution_Cs137v1.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v1.html"],
-      ["PyROOT_resolution_Cs137v2.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v2.html"],
-      ["PyROOT_resolution_Cs137v3.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v3.html"],
-      ["PyROOT_resolution_Cs137v4.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v4.html"],
-      ["PyROOT_resolution_Cs137v5.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v5.html"],
+      ["Multi_iTED_resolution_Cs137v1.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v1.html"],
+      ["Multi_iTED_resolution_Cs137v2.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v2.html"],
+      ["Multi_iTED_resolution_Cs137v3.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v3.html"],
+      ["Multi_iTED_resolution_Cs137v4.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v4.html"],
+      ["Multi_iTED_resolution_Cs137v5.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/PyROOT_resolution_Cs137v5.html"],
       ["Multi_iTED_CRTv1.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/Multi_iTED_CRT.html"],
       ["Multi_iTED_CRTv2.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/Multi_iTED_CRTv2.html"],
       ["Multi_iTED_CRTv3.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/Multi_iTED_CRTv3.html"],
       ["Multi_iTED_CRTv4.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/Multi_iTED_CRTv4.html"],
-      ["Calibration.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/Spectrum_conversion.html"],
-      ["Individual_thresholds.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/IndividualThresholds.html"],
+      ["Multi_iTED_Calibration.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/Spectrum_conversion.html"],
+      ["Multi_iTED_Individual_thresholds.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/IndividualThresholds.html"],
+      ["Multi_iTED_Coincidence_resolution.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/Multi_iTED_Coincidence_resolution.html"],
     ]
 
 [module]
