@@ -190,7 +190,7 @@ Two minimums were identified for $W=0, N_p=9$ and $W=1, N_p=25$.
 The configuration $W=1, N_p=25$ was taken not only because of having the lowest standard deviation for the peak, but also because it was identified that the distribution of the values is considerably skew towards the central value, whereas for $W=0, N_p=9$ there is a presence of more events in the tails of the distribution.
 
 %************************************************
-\subsection{Resolution}
+\subsection{Resolution}\label{ssec:resolution}
 %************************************************
 
 The energy resolution is one of the most important parameters to optimize due to its influence on the imaging reconstruction, \ref{}.
@@ -235,9 +235,60 @@ In the present project this integration window was kept between 100 and 250ns. P
 \subsection{Energy resolution}
 %************************************************
 
+Besides the parameters mentioned in \ref{ssec:resolution}, the energy resolution depends on the energy.
+
+For this section, it was studied for the 662keV peak of Cs-137, a common benchmark of comparison, as well as for the 511keV of Na-22, due to its importance for PET imaging.
+
 \subsubsection{Singles resolution}
 
+The single's resolution is the energy resolution of each crystal of each i-TED.
+
+\paragraph*{662keV}
+
+\paragraph*{511keV}
+
 \subsubsection{Coincidences resolution}
+
+The coincidences' resolution is the energy resolution of an i-TED module adding the energies of scatterer and absorbers in coincidence.
+
+\paragraph*{662keV}\\~\\
+
+iTED module:\\
+
+\begin{tabular}{lrrrr}
+    \toprule
+    iTED &    A &    B &    C &    D \\
+    \midrule
+    mean & 6.41 & 7.03 & 7.17 & 6.81 \\
+    min  & 5.37 & 6.54 & 5.59 & 6.14 \\
+    25\%  & 5.77 & 6.85 & 6.42 & 6.53 \\
+    50\%  & 6.34 & 7.02 & 6.99 & 6.70 \\
+    75\%  & 6.66 & 7.20 & 7.99 & 7.08 \\
+    max  & 8.43 & 7.57 & 9.36 & 9.74 \\
+    \bottomrule
+\end{tabular}\\
+
+Integration window and threshold configuration:\\
+
+\begin{tabular}{lrrrrrrrr}
+    \toprule
+    threshold & \multicolumn{4}{c}{888} & \multicolumn{4}{c}{88c} \\
+    iw &  100 &  150 &  200 &  250 &  100 &  150 &  200 &  250 \\
+    \midrule
+    mean & 7.01 & 6.94 & 6.88 & 6.83 & 6.89 & 6.82 & 6.76 & 6.71 \\
+    min  & 5.59 & 5.53 & 5.48 & 5.44 & 5.49 & 5.43 & 5.38 & 5.37 \\
+    25\%  & 6.64 & 6.56 & 6.51 & 6.42 & 6.44 & 6.38 & 6.36 & 6.30 \\
+    50\%  & 7.00 & 6.96 & 6.93 & 6.91 & 6.85 & 6.79 & 6.75 & 6.73 \\
+    75\%  & 7.27 & 7.25 & 7.23 & 7.21 & 7.27 & 7.20 & 7.14 & 7.12 \\
+    max  & 9.25 & 9.00 & 8.89 & 8.59 & 9.74 & 9.74 & 9.72 & 9.72 \\
+    \bottomrule
+\end{tabular}
+
+\paragraph*{511keV}
+
+iTED module:\\
+
+Integration window and threshold configuration:\\
 
 %************************************************
 \subsection{Image reconstruction}
@@ -247,9 +298,29 @@ In the present project this integration window was kept between 100 and 250ns. P
 \subsection{Counting rate}
 %************************************************
 
+The counting rate depends mainly on 4 conditions: the source/background, the activity of the crystal (mainly alpha, see \ref{ssec:alpha}), the thresholds, and the integration window.
+
 %************************************************
-\subsection{Alpha activity}
+\subsection{Alpha activity}\label{ssec:alpha}
 %************************************************
+
+The alpha activity depends on the growth of the crystal.
+
+As it creates a three peak background between 1600keV and 2800keV it is better to use crystals with low background, especially if the energies of interest are in that range.
+
+For this study, the 88c configuration and a 250ns integration window were used.
+
+\begin{tabular}{lrrrr}
+    \toprule
+    iTED &    A  &      B &     C  &     D \\
+    \midrule
+    0    & 24.18 & 143.98 & 153.82 &151.78 \\
+    1    &157.68 & 124.04 & 225.55 &219.50 \\
+    2    &117.38 & 204.45 & 230.12 &240.79 \\
+    3    & 36.72 & 221.01 & 196.45 &227.26 \\
+    4    &222.20 & 215.39 & 192.53 &231.87 \\
+    \bottomrule
+\end{tabular}
 
 %************************************************
 \subsection{Timing resolution}
