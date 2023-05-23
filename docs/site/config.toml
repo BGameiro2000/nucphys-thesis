@@ -49,10 +49,10 @@ ignoreErrors = ["error-remote-getjson"]
   description = """
 
   Hi!
-  I am Bernardo Gameiro.
+  I am <a href="https://bgameiro.me">Bernardo Gameiro</a>.
   This page contains information
-  regarding my thesis at IFIC,
-  as a NucPhys master student.
+  regarding my thesis at <a href="http://webgamma.ific.uv.es/gamma/composicion-del-grupo/">IFIC</a>,
+  as a <a href="http://www.emm-nucphys.eu/study-programme/curriculum-s/curriculum-2020-2025-intakes-4-7">NucPhys</a> master student.
   
   """
 
