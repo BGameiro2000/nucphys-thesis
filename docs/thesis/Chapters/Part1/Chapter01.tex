@@ -16,8 +16,12 @@ To that end, an array of Compton cameras was developed in order to select events
 
 %************************************************
 %************************************************
-\section{Nucleosynthesis}\label{sec:nucleosynthesis}
+\section{Nuclear Astrophysics}\label{sec:astrophysics}
 %************************************************
+%************************************************
+
+%************************************************
+\subsection{Nucleosynthesis}\label{sec:nucleosynthesis}
 %************************************************
 
 The question of the relative abundances of the different elements is one of the central topics of Nuclear Astrophysics and the one that birthed the field through the concept of nucleosynthesis in the first half of the XX century.
@@ -26,7 +30,8 @@ Nucleosynthesis is the process that leads to the creation of atomic nuclei throu
 
 The present thesis concern's itself mainly with stellar nucleosynthesis, meaning the creation of nuclei through the nuclear processes that fuel stellar evolution. This process is closely related to the relative abundance of elements lighter than iron.
 
-The main nuclear processes that occur in stellar nucleosynthesis are:
+The main nuclear capture processes that occur in stellar nucleosynthesis are:
+
 \begin{itemize}
     \item s-process
     \item r-process
@@ -37,9 +42,33 @@ The main nuclear processes that occur in stellar nucleosynthesis are:
 The \ac{i-TED} detector was developed to study the neutron cross-sections of s-process reactions.
 
 %************************************************
-\subsection{s-process}
+\subsection{Neutron capture processes}
 %************************************************
 
+In contrast with the isotopes up to $^{56}$Fe, which were mainly created by fusion, isotopes with higher mass number were formed by neutron capture reactions such as the s- and r-processes, as well as by proton capture precesses such as p- and rp-processes.
+
+The neutron capture processes are classified based on the relative timescale of the neutron capture and neutron decay by $\beta^-$.
+
+When the neutron capture happens slower than the $\beta^-$ decay, the process is slow (s-process). If otherwise the neutron capture is faster than the $\beta^-$ decay, the process is rapid (r-process).
+
+\begin{itemize}
+    \item s-process: $a$
+    \item r-process: $a$
+\end{itemize}
+
+If s- or r-process takes place will depend on the neutron capture cross-section, on the neutron flux inside the star, and the half-life of the $\beta^-$ decay branch.
+
+%************************************************
+\subsection{Challenges}
+%************************************************
+
+\paragraph*{Energy range}
+
+
+\paragraph*{Cross-section}
+
+
+\paragraph*{Background}
 
 %************************************************
 \subsection{Neutron time of flight experiments}
@@ -74,6 +103,17 @@ The current version of the \ac{i-TED} detector system is a $\gamma$ imager. As s
 %************************************************
 \subsection{Compton scattering}
 %************************************************
+
+There are three mechanisms of interaction between $\gamma$-rays, and electromagnetic radiation in general, and matter. The probability of interaction by each method depends mainly on the energy of the interacting radiation and the atomic number of the absorber it interacts with. The main interaction method is described in \ref{fig:interaction_mechanism}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=5cm]{gfx/Interaction of Radiation with Matter.png}%
+    \caption{Most probable interaction mechanism of electromagnetic radiation with matter as a function of energy and atomic number Z. From \cite{ParticlePhysicsReference2}.}%
+    \label{fig:interaction_mechanism}%
+\end{figure}
+
+As the detector is an array of Compton cameras, the main interaction of interest is Compton scattering.
 
 %************************************************
 \subsection{Scintillators}
