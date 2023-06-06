@@ -90,6 +90,8 @@ ignoreErrors = ["error-remote-getjson"]
       ["Multi_iTED_Coincidence_resolution.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/Multi_iTED_Coincidence_resolution.html"],
       ["Multi_iTED_Temperature.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/Multi_iTED_Temperature_series.html"],
       ["Multi_iTED_Temperature_Detailed.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/Multi_iTED_Temperature_long.html"],
+      ["iTED_E_Individual_thresholds.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/iTED_E_IndividualThresholds.html"],
+      ["iTED_E_Singles_resolution.ipynb", "https://bgameiro.gitlab.io/nucphys-thesis/iTED_E_Resolution_Cs137.html"],
     ]
 
 [module]
