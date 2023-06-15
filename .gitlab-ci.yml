@@ -2,7 +2,7 @@ documents:
   stage: build
   image: thomasweise/docker-texlive-full
   script:
-    - sudo pacman -Syyu --noconfirm
+    - pacman -Syyu --noconfirm
     - mkdir -p out
     - ./MAKEALLDOCS
     - ls out
