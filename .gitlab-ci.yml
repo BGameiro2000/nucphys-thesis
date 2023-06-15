@@ -2,7 +2,7 @@ documents:
   stage: build
   image: archlinux:latest
   before_script:
-    - pacman --noconfirm -Syyu texlive-most texlive-lang poppler
+    - pacman --noconfirm -Syyu texlive texlive-lang poppler biber
   script:
     - mkdir -p out
     - ./MAKEALLDOCS
