@@ -1,8 +1,6 @@
 documents:
   stage: build
-  image: archlinux:latest
-  before_script:
-    - pacman --noconfirm -Syyu texlive texlive-lang poppler biber
+  image: thomasweise/docker-texlive-full
   script:
     - mkdir -p out
     - ./MAKEALLDOCS
