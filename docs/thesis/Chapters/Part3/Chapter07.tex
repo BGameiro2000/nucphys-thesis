@@ -1,47 +1,54 @@
+
 %************************************************
 %************************************************
 %************************************************
-\chapter{Imaging Objectives}\label{ch:objectives}
+\chapter{Imaging Techniques}\label{ch:techniques}
 %************************************************
 %************************************************
 %************************************************
 
-There are two main objectives to be achieved with a detector with imaging capabilities.
-
-The objectives are:
-\begin{itemize}
-    \item Background Suppression
-    \item Source Visualization
-\end{itemize}
-
-Their relative importance depends on the specific application of the detector.
-
 %************************************************
 %************************************************
-\section{Background Suppression}
+\section{Imaging Algorithms}
 %************************************************
 %************************************************
 
-For the main application of \ac{i-TED}, suppression of background in stellar nucleo-synthesis reactions, the imaging capability is second to the background suppression performance.
+%************************************************
+\subsection{Back Projection}\label{ssec:backprojection}
+%************************************************
 
-In nuclear experiments, especially those built around the use of accelerators, the detectors are positioned optimally, which in most cases means the target is centered with the detector. This results in a simplification into the selection of those events which come from the center of the field of view of the detector instead of an arbitrary position.
+%************************************************
+\subsection{Analytical}\label{ssec:analytical}
+%************************************************
 
-Furthermore, some imaging algorithms such as back projection, \ref{ssec:backprojection}, and the analytical, \ref{ssec:analytical}, the original position of the source isn't computed but rather a fit of possible origins. Hence, cuts aren't applied on the basis of the origin coordinates but rather on the basis of figures of merit such as the ones discussed in \ref{ssec:lambda} and \ref{ssec:arm}.
+%************************************************
+\subsection{Stochastic Ensemble Origin}\label{ssec:soe}
+%************************************************
 
-Nevertheless, imaging resolution is important for visualization and validation of the methods used as well as for methods that do use coordinates such as \ref{ssec:soe}.
-
-It is important to note that although the focus on optimizing background suppression to maximize the signal-to-background ratio is the main objective in this case, the magnitudes used for the figures of merit discussed in \ref{sec:fom} depend on the same parameters (energy and position in both planes) as the imaging algorithms. As such, an improvement in imaging resolution is correlated to an improvement in the resolution of the figures of merit.
+%************************************************
+\subsection{Whatever I was trying to do}
+%************************************************
 
 %************************************************
 %************************************************
-\section{Source Visualization}
+\section{Figures of Merit}\label{sec:fom}
 %************************************************
 %************************************************
 
-Applications such as hadrontherapy and analysis of nuclear waste, source visualization and imaging resolution become the main parameters to optimize.
+%************************************************
+\subsection{Lambda}\label{ssec:lambda}
+%************************************************
 
-For hadrontherapy, Compton imaging provides a way of visualizing where the energy is deposited inside the target tissue without the need for detectors facing each other such as with PET imaging.
+%************************************************
+\subsection{Angular Resolution Measure}\label{ssec:arm}
+%************************************************
 
-For nuclear waste analysis, Compton imaging enables images using a single detector in order to discern between waste with different levels of radioactivity and even hotspots within one continuous barrel of waste.
+%************************************************
+\subsection{Coordinates}\label{ssec:coord}
+%************************************************
 
-In both the aforementioned applications, the main objective is visualization and not background suppression and, as such, the optimization of the imaging capabilities is the main objective.
+%************************************************
+%************************************************
+\section{Figures of Merit}
+%************************************************
+%************************************************
