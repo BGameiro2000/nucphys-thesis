@@ -1,0 +1,1241 @@
+sources:          
+
+  Cs137_null_0_100:
+    description: "iTED-A at position 0 measurement of Cs137 source with no fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_iTEDA_moving_D.2023_05_11_T.09_51_47_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x0.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 68.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+          
+  Cs137_null_0_250:
+    description: "iTED-A at position 0 measurement of Cs137 source with no fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_iTEDA_moving_D.2023_05_11_T.09_51_47_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x0.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 68.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Cs137_null_10_100:
+    description: "iTED-A at position 10 measurement of Cs137 source with no fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_iTEDA_moving_D.2023_05_11_T.10_07_01_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x10.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 78.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Cs137_null_10_250:
+    description: "iTED-A at position 10 measurement of Cs137 source with no fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_iTEDA_moving_D.2023_05_11_T.10_07_01_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x10.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 78.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Cs137_null_20_100:
+    description: "iTED-A at position 20 measurement of Cs137 source with no fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_iTEDA_moving_D.2023_05_11_T.10_22_17_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x20.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 88.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+          
+  Cs137_null_20_250:
+    description: "iTED-A at position 20 measurement of Cs137 source with no fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_iTEDA_moving_D.2023_05_11_T.10_22_17_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x20.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 88.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Cs137_null_30_100:
+    description: "iTED-A at position 30 measurement of Cs137 source with no fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_iTEDA_moving_D.2023_05_11_T.10_37_33_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x30.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 98.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Cs137_null_30_250:
+    description: "iTED-A at position 30 measurement of Cs137 source with no fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_iTEDA_moving_D.2023_05_11_T.10_37_33_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x30.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 98.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Cs137_null_40_100:
+    description: "iTED-A at position 40 measurement of Cs137 source with no fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_iTEDA_moving_D.2023_05_11_T.10_52_49_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x40.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 108.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Cs137_null_40_250:
+    description: "iTED-A at position 40 measurement of Cs137 source with no fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_iTEDA_moving_D.2023_05_11_T.10_52_49_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x40.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 108.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_null_0_100:
+    description: "iTED-A at position 0 measurement of Na22 source with no fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_iTEDA_moving_D.2023_05_10_T.18_10_18_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x0.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 68.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+          
+  Na22_null_0_250:
+    description: "iTED-A at position 0 measurement of Na22 source with no fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_iTEDA_moving_D.2023_05_10_T.18_10_18_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x0.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 68.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_null_10_100:
+    description: "iTED-A at position 10 measurement of Na22 source with no fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_iTEDA_moving_D.2023_05_10_T.18_25_35_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x10.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 78.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_null_10_250:
+    description: "iTED-A at position 10 measurement of Na22 source with no fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_iTEDA_moving_D.2023_05_10_T.18_25_35_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x10.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 78.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_null_20_100:
+    description: "iTED-A at position 20 measurement of Na22 source with no fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_iTEDA_moving_D.2023_05_10_T.18_40_53_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x20.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 88.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+          
+  Na22_null_20_250:
+    description: "iTED-A at position 20 measurement of Na22 source with no fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_iTEDA_moving_D.2023_05_10_T.18_40_53_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x20.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 88.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_null_30_100:
+    description: "iTED-A at position 30 measurement of Na22 source with no fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_iTEDA_moving_D.2023_05_10_T.18_56_16_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x30.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 98.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_null_30_250:
+    description: "iTED-A at position 30 measurement of Na22 source with no fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_iTEDA_moving_D.2023_05_10_T.18_56_16_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x30.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 98.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_null_40_100:
+    description: "iTED-A at position 40 measurement of Na22 source with no fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_iTEDA_moving_D.2023_05_10_T.19_11_36_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x40.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 108.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_null_40_250:
+    description: "iTED-A at position 40 measurement of Na22 source with no fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_iTEDA_moving_D.2023_05_10_T.19_11_36_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x40.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: null
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 108.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Cs137_Cs137_0_100:
+    description: "iTED-A at position 0 measurement of Cs137 source with Cs137 fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.15_25_08_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x0.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 68.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+          
+  Cs137_Cs137_0_250:
+    description: "iTED-A at position 0 measurement of Cs137 source with Cs137 fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.15_25_08_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x0.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 68.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Cs137_Cs137_10_100:
+    description: "iTED-A at position 10 measurement of Cs137 source with Cs137 fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.15_40_22_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x10.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 78.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Cs137_Cs137_10_250:
+    description: "iTED-A at position 10 measurement of Cs137 source with Cs137 fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.15_40_22_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x10.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 78.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Cs137_Cs137_20_100:
+    description: "iTED-A at position 20 measurement of Cs137 source with Cs137 fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.15_55_39_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x20.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 88.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+          
+  Cs137_Cs137_20_250:
+    description: "iTED-A at position 20 measurement of Cs137 source with Cs137 fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.15_55_39_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x20.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 88.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Cs137_Cs137_30_100:
+    description: "iTED-A at position 30 measurement of Cs137 source with Cs137 fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.16_10_55_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x30.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 98.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Cs137_Cs137_30_250:
+    description: "iTED-A at position 30 measurement of Cs137 source with Cs137 fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.16_10_55_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x30.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 98.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Cs137_Cs137_40_100:
+    description: "iTED-A at position 40 measurement of Cs137 source with Cs137 fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.16_26_14_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x40.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 108.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Cs137_Cs137_40_250:
+    description: "iTED-A at position 40 measurement of Cs137 source with Cs137 fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Cs137_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.16_26_14_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x40.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Cs137
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 108.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_Cs137_0_100:
+    description: "iTED-A at position 0 measurement of Na22 source with Cs137 fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.16_49_00_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x0.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 68.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+          
+  Na22_Cs137_0_250:
+    description: "iTED-A at position 0 measurement of Na22 source with Cs137 fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.16_49_00_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x0.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 68.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_Cs137_10_100:
+    description: "iTED-A at position 10 measurement of Na22 source with Cs137 fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.17_04_15_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x10.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 78.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_Cs137_10_250:
+    description: "iTED-A at position 10 measurement of Na22 source with Cs137 fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.17_04_15_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x10.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 78.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_Cs137_20_100:
+    description: "iTED-A at position 20 measurement of Na22 source with Cs137 fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.17_19_32_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x20.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 88.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+          
+  Na22_Cs137_20_250:
+    description: "iTED-A at position 20 measurement of Na22 source with Cs137 fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.17_19_32_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x20.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 88.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_Cs137_30_100:
+    description: "iTED-A at position 30 measurement of Na22 source with Cs137 fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.17_34_52_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x30.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 98.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_Cs137_30_250:
+    description: "iTED-A at position 30 measurement of Na22 source with Cs137 fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.17_34_52_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x30.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 98.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_Cs137_40_100:
+    description: "iTED-A at position 40 measurement of Na22 source with Cs137 fake background using a window of 100ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.17_50_13_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x40.0_y0.0_CW100_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 108.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 100
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
+
+  Na22_Cs137_40_250:
+    description: "iTED-A at position 40 measurement of Na22 source with Cs137 fake background using a window of 250ns, 88C threshold and energy-1 weighted timing of the first 25 events"
+    driver: csv
+    args:
+      urlpath: "/run/media/bgameiro/d043b5e4-57a4-457e-8839-cb1adc9c72bc/Data/imaging_study/w_temperature/Na22_center_Cs137_wall_center_iTEDA_moving_D.2023_05_10_T.17_50_13_C.itedABCD_lab_custom_2023.02.22_4.0v_887_900s_x40.0_y0.0_CW250_25_1.root_0.0_10.0MeV.csv"
+      csv_kwargs:
+          header: null
+          names: ["0","DetectorNumber","E_s","X_s","Y_s","Z_s","E_a","X_a","Y_a","Z_a","dt","ts"]
+    metadata:
+      source: Na22
+      background: Cs137
+      position:
+          x: 0
+          y: 0
+          z: -86.5
+      detector: 
+          id: iTED-A
+          offset: 108.5
+      location: IFIC
+      time: 900
+      configuration:
+          threshold: 88C
+          version: IFIC
+          cw: 250
+          timing: 25.1
+      acquisition:
+          pc: itedws2
+      processing:
+          pc: itedws
+          version: parallelsingles2tree_GPU_Timing_energy_weighted
