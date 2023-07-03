@@ -6,6 +6,8 @@
 %************************************************
 %************************************************
 
+test
+
 %************************************************
 %************************************************
 \section{Total Energy Detectors}
@@ -23,6 +25,61 @@
 %************************************************
 \subsection{Linearization}
 %************************************************
+
+%************************************************
+%************************************************
+\section{Evolution of $\gamma$-ray Scintillation Detectors}
+%************************************************
+%************************************************
+
+According to \cite[p.~253]{Stock2013Sep}, the most important detector properties of modern high-resolution $\gamma$-ray spectroscopy are:
+\begin{itemize}\label{list:hires_spec}
+    \item high efficiency for $\gamma$-ray
+    \item high energy resolution
+    \item high counting rate
+    \item high probability of full absorption
+    \item high granularity
+\end{itemize}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=5cm]{gfx/Scintillators.png}
+    \caption{Measured energy resolution of several scintillators for 662 keV gamma rays as a function of their light output. From \cite{Moses2002Jul}}%
+    \label{fig:Scintillator}%
+\end{figure}
+
+%************************************************
+\subsection{Materials}\label{ssec:materials}
+%************************************************
+
+With the first two points in mind, new materials have been studied and developed, such as LaCl$_3$(Ce) and LaBr$_3$(Ce). These, according to \cite[p.~251]{Knoll4}, present several improvements in comparison with previous generations of scintillators:
+\begin{itemize}
+    \item high density
+    \item high effective Z
+    \item fast decay times
+    \item high energy resolution
+    \item good wavelength compatibility with photocathodes
+\end{itemize}
+
+Still, they present worse energy resolution than semiconductor-based detectors such as \ac{HPGe} (\approx$\times10$), \cite{}; more neutron sensitivity than other scintillators such as C6D6, \cite{Borella2007Jul}; worse timing resolution than organic scintillators; and aren't as suitable for particle discrimination based on \ac{PSD} as stilbene detectors, \cite{Becchetti2018Nov}.
+
+%************************************************
+\subsection{Geometries}
+%************************************************
+
+The geometry of detectors has been developed in order to address the two last points of \ref{list:hires_spec}.
+
+Initially, scintillation detectors consisted only of the detecting material and the light acquisition such as the \ac{PMT}, but in order to decrease the Compton continuum a new design was developed: \ac{ACS}, \ref{}.
+
+This design allows the use of anticoincidence with a secondary detector such as NaI(Tl) or BGO, since in most cases if there are events in coincidence between the main detector and the \ac{ACS}, then it means the radiation underwent Compton scattering within the main detector.
+
+Following that development, in order to improve the granularity and energy efficiency, segmented were developed, \ref{}.
+
+This design allows the use of coincidence and spacial granularity to obtain the original energy of the radiation before scattering by using add back algorithm.
+
+The present project focus on a new generation of detectors: Compton imaging detectors.
+
+This type of detector makes use of two planes of detectors, possibly segmented, and of add back algorithms in order to reconstruct the origin of the radiation source. This imaging capability has the objective of rejecting events that originate from outside the intended spacial origin in cases of high background.
 
 %************************************************
 %************************************************
@@ -62,7 +119,15 @@
 
 \subsubsection{Detecting material}
 
+The \ac{i-TED} detector system uses LaCl$_3$(Ce) as its scintillator.
+
+As previously discussed in \ref{ssec:materials}, LaCl$_3$ has better characteristics when compared with longer-standing technologies such as NaI(Tl), including better timing performance, which increases with Cerium dopant, and better energy resolution.
+
+Specifically, LaCl$_3$(Ce) was selected instead of LaBr$_3$(Ce) due to its lower neutron efficiency, resulting in a small, but necessary for some applications, trade-off for energy resolution.
+
 \subsubsection{Neutron absorber}
+
+In order to further decrease the neutron sensitivity of the \ac{i-TED} detector system, a Li-6 shield with a thickness of .. cm was placed in front of the absorber. Li-6 is a moderator of neutrons with a 
 
 \subsubsection{Silicon photomultiplier}
 
@@ -74,7 +139,7 @@
 
 \subsubsection{Geometry}
 
-\subsubsection{Distance - }
+\subsubsection{Distance between planes}
 
 
 %************************************************
@@ -90,3 +155,5 @@
 \paragraph{Detecting material}
 
 \paragraph{Neutron absorber}
+
+test
